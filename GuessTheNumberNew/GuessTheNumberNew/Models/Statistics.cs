@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿using System.Collections.Generic;
 namespace GuessTheNumberNew.Models
 {
-    internal class Statistics
+    namespace GuessTheNumber.Models
     {
+        public class Statistics
+        {
+            public List<GameResult> Results { get; set; } = new List<GameResult>();
+        }
     }
 }

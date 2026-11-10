@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace GuessTheNumberNew.Models
+﻿namespace GuessTheNumberNew.Models
 {
-    internal class Difficulty
-    {
+    public enum Difficulty { 
+        Easy,
+        Medium,
+        Hard
     }
 }
