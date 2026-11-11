@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace GuessTheNumberNew.Models
+﻿namespace GuessTheNumberNew.Models
 {
-    internal class GameResult
+    public class GameSettings
     {
+        public Difficulty CurrentDifficulty { get; set; }
+        public int MinNumber { get; set; }
+        public int MaxNumber { get; set; }
+        public int MaxAttempts { get; set; }
     }
+
 }
