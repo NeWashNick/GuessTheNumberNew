@@ -1,11 +1,13 @@
-﻿namespace GuessTheNumberNew.Models
+﻿namespace GuessTheNumber.Models
 {
     public class GameSettings
     {
-        public Difficulty CurrentDifficulty { get; set; }
-        public int MinNumber { get; set; }
-        public int MaxNumber { get; set; }
-        public int MaxAttempts { get; set; }
-    }
+        public string PlayerName = "Игрок";
+        public Difficulty Difficulty;
 
+        public GameSettings(Difficulty difficulty)
+        {
+            Difficulty = difficulty;
+        }
+    }
 }

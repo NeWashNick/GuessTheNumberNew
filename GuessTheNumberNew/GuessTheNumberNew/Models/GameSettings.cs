@@ -1,11 +1,22 @@
-﻿namespace GuessTheNumberNew.Models
+﻿namespace GuessTheNumber.Models
 {
     public class GameResult
     {
-        public string PlayerName { get; set; }
-        public Difficulty Difficulty { get; set; }
-        public bool IsWon { get; set; }
-        public int AttemptsCount { get; set; }
-        public DateTime Date { get; set; }
+        public string PlayerName;
+        public string DifficultyName;
+        public int SecretNumber;
+        public int Attempts;
+        public bool IsWin;
+        public DateTime Date;
+
+        public GameResult(string playerName, string difficultyName, int secretNumber, int attempts, bool isWin)
+        {
+            PlayerName = playerName;
+            DifficultyName = difficultyName;
+            SecretNumber = secretNumber;
+            Attempts = attempts;
+            IsWin = isWin;
+            Date = DateTime.Now;
+        }
     }
 }
